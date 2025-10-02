@@ -239,3 +239,5 @@ class: text-center
 # Questions?
 
 Thank you!
+
+<img src="/QrCode.png" class="absolute bottom-10 right-10 w-40 h-40 bg-white p-2 rounded" />
