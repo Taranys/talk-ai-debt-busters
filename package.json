@@ -3,11 +3,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /talk-ai-debt-busters/ --out docs",
     "dev": "slidev --open",
     "export": "slidev export"
   },
   "dependencies": {
+    "@doctolib/slidev-theme": "^0.2.2",
     "@slidev/cli": "^52.2.4",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
