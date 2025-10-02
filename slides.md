@@ -9,28 +9,26 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+background: https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 # Debt Busters
 
-## How AI Became My Technical Debt Sidekick
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+How AI Became My Technical Debt Sidekick
 
 ---
-layout: section
+layout: cover
+background: https://images.unsplash.com/photo-1529220502050-f15e570c634e?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+class: text-white
 ---
 
 # Case Study #1
-## Test Refactoring for Patient Base Migration
+
+Fix all tests related to Organization for Patient Base Migration
 
 ---
 
-# The Challenge: Test Refactoring Methodology
+# The Challenge
 
 <div class="grid grid-cols-2 gap-8">
 <div>
@@ -71,19 +69,18 @@ layout: section
 
 </v-clicks>
 
-<div v-click class="mt-8 p-4 bg-blue-500/10 rounded">
-
-### Result: 85% of tests refactored with AI assistance, 4 weeks instead of estimated 12
-
+<div v-click class="mt-2 p-4 bg-blue-500/10 rounded">
+Result: 85% of tests refactored with AI assistance, 4 weeks instead of estimated 12
 </div>
 
 </div>
 
 ---
 
-# Key Takeaways: Test Refactoring
+# Key Takeaways
 
-<div class="space-y-6">
+<div class="grid grid-cols-2 gap-8">
+<div>
 
 ## What Worked ✅
 
@@ -91,24 +88,33 @@ layout: section
 - **Batch processing** with validation caught most issues
 - Combining AI speed with **human judgment** for critical paths
 
+</div>
+<div>
+
 ## What Didn't Work ❌
 
 - AI struggled with **edge cases** and complex business logic
 - Required **constant validation** to avoid introducing bugs
 - Some tests needed **100% manual** refactoring
 
+</div>
+</div>
+
 ## Lessons Learned 💡
 
-> AI is a powerful accelerator, but not a replacement for understanding your codebase
-
+<div class="mt-2 p-4 bg-blue-500/10 rounded">
+AI is a powerful accelerator, but not a replacement for understanding your codebase
 </div>
 
 ---
-layout: section
+layout: cover
+background: https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+class: text-white
 ---
 
 # Case Study #2
-## Finding Owners for 60+ Feature Switches
+
+Finding Owners for 60+ Feature Switches
 
 ---
 
