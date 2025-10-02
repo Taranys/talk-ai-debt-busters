@@ -34,7 +34,7 @@ Fix all tests related to Organization for Patient Base Migration
 <div>
 
 ## The Problem
-- Patient Base migration needed
+- Organization violations was not track in test files
 - Hundreds of tests to refactor
 - Complex test dependencies
 - Time-sensitive project
@@ -45,8 +45,8 @@ Fix all tests related to Organization for Patient Base Migration
 ## AI-Assisted Approach
 
 1. **Analyze patterns** in existing tests
-2. **Generate refactoring rules** with AI
-3. **Batch processing** with AI validation
+2. **Generate a plan** with AI
+3. **Batch processing** with Claude sub-agent
 4. **Human review** of critical changes
 
 </div>
@@ -62,16 +62,21 @@ Fix all tests related to Organization for Patient Base Migration
 
 <v-clicks>
 
-- **Week 1**: AI analyzed 200+ test files, identified common patterns
-- **Week 2**: Generated transformation scripts for test structure changes
-- **Week 3**: Applied changes in batches of 20-30 tests with AI review
-- **Week 4**: Manual review and edge case handling
+- **Plan**: AI analyzed 200+ test files, identified common patterns and define resolution patterns
+- **Fix in Batch**: Start 10 agents to fix all tests
+- **Run all tests to check**: Detect complex cases
+- **Alignement**: Manual review and edge case handling
+- **Trade-off**: Some tests was too complex to be fixed and are removed from the PR
+
+
+
+## Result 💡
+
+<div class="mt-2 p-4 bg-blue-500/10 rounded">
+More than half tests refactored with AI assistance letting all teams focusing on the complex cases
+</div>
 
 </v-clicks>
-
-<div v-click class="mt-2 p-4 bg-blue-500/10 rounded">
-Result: 85% of tests refactored with AI assistance, 4 weeks instead of estimated 12
-</div>
 
 </div>
 
@@ -84,9 +89,9 @@ Result: 85% of tests refactored with AI assistance, 4 weeks instead of estimated
 
 ## What Worked ✅
 
-- AI excels at **pattern recognition** in code
-- **Batch processing** with validation caught most issues
-- Combining AI speed with **human judgment** for critical paths
+- AI is great to apply refactoring patterns at scale
+- **Batch processing** allow a quick fix
+- Combining AI speed with **human review** to ensure acceptation
 
 </div>
 <div>
@@ -94,7 +99,7 @@ Result: 85% of tests refactored with AI assistance, 4 weeks instead of estimated
 ## What Didn't Work ❌
 
 - AI struggled with **edge cases** and complex business logic
-- Required **constant validation** to avoid introducing bugs
+- Factories with **non-standard** implementation
 - Some tests needed **100% manual** refactoring
 
 </div>
@@ -114,17 +119,17 @@ class: text-white
 
 # Case Study #2
 
-Finding Owners for 60+ Feature Switches
+Finding Owners for 54 Feature Switches
 
 ---
 
-# The Challenge: Feature Switch Ownership
+# The Challenge
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
 ## The Problem
-- 60+ orphaned feature switches
+- 54 feature switches affected **by default** to our team
 - Reassigned to our team
 - No documentation
 - Unknown business impact
@@ -134,10 +139,10 @@ Finding Owners for 60+ Feature Switches
 
 ## AI-Assisted Methodology
 
-1. **Code archaeology**: trace usage patterns
-2. **Git history analysis**: find original authors
-3. **Impact assessment**: understand dependencies
-4. **Documentation generation**: create ownership records
+1. **Create a plan**: Ask AI to generate a file with each FS, owner and a rational with a placeholder... Commit !
+2. **Code archaeology**: started 10 agents with a mission to use MCPs to investigate
+3. **Ownership assignation**: Fill the file with suggested owner, level of certitude and a rational with a link
+4. **Ping all teams**: Start negociation
 
 </div>
 </div>
@@ -148,14 +153,13 @@ Finding Owners for 60+ Feature Switches
 
 <div class="space-y-4">
 
-## The Investigation Process
+## MCPs for the win
 
 <v-clicks>
 
-- **AI scanned git history** for each switch: original PRs, authors, related changes
-- **Generated usage reports**: where switches are used, how often toggled
-- **Identified stakeholders**: mapped code ownership to team structure
-- **Created documentation**: automated feature switch registry
+- **AI scanned github && git history** for each switch: original PRs, authors, related changes
+- **Confluence and JIRA**: who created FS and where are they used
+- **DUST**: gather a vision from another LLM
 
 </v-clicks>
 
@@ -163,22 +167,22 @@ Finding Owners for 60+ Feature Switches
 
 <div class="p-4 bg-green-500/10 rounded">
 
-**30 switches**
-Owners found
+**58 switches**
+Reaffected
 
 </div>
 
 <div class="p-4 bg-yellow-500/10 rounded">
 
-**20 switches**
-Deprecated
+**4 switches**
+Deleted
 
 </div>
 
 <div class="p-4 bg-blue-500/10 rounded">
 
-**10 switches**
-Need discussion
+**0 switches**
+For our team 🎉
 
 </div>
 
@@ -188,47 +192,47 @@ Need discussion
 
 ---
 
-# Key Takeaways: Feature Switch Ownership
+# Key Takeaways
 
-<div class="space-y-6">
+<div class="grid grid-cols-2 gap-8">
+<div>
 
 ## What Worked ✅
 
-- AI + git history = powerful **archaeology tool**
-- Automated **documentation generation** saved hours
-- Pattern matching across **thousands of commits**
+- Commit a plan at first and ask AI to update it faciliate parallelization
+- Ai detected unused FS and suggeted to delete them
+- 1 PR helps to gather aggreement between teams
+- Having a suggested ownership and a rational forced teams to suggest a better owner
 
-## Challenges ⚠️
+</div>
+<div>
 
-- Old switches had **lost context** over time
-- Required **human validation** of assumptions
+## What Didn't Work ❌
+
+- More than half suggestions was invalid 🙃
+- **Hallucination** on one team name and suggested deleted Doctoteams
 - Some decisions still needed **business input**
 
-## Best Practices 🎯
+</div>
+</div>
 
-- **Document ownership** from day one
-- Use AI for investigation, **humans for decisions**
-- Feature switches need **lifecycle management**
+---
+
+# Pull Requests
+
+<div class="space-y-8">
+
+## Case Study #1: Test Refactoring
+[PR Link - Tests Organization Migration](https://github.com/doctolib/doctolib/pull/216509)
+
+## Case Study #2: Feature Switch Ownership
+[PR Link - Feature Switch Ownership](https://github.com/doctolib/doctolib/pull/217841)
 
 </div>
 
 ---
-layout: center
-class: text-center
----
-
-# Conclusion
-
-## AI is Your Technical Debt Sidekick, Not a Silver Bullet
-
-<div class="pt-8">
-
-Use AI for speed, use humans for judgment
-
-</div>
-
----
-layout: center
+layout: cover
+background: https://images.unsplash.com/photo-1665789318391-6057c533005e?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 class: text-center
 ---
 
