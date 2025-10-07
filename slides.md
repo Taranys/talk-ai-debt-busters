@@ -40,16 +40,6 @@ Fix all tests related to Organization for Patient Base Migration
 - Time-sensitive project
 
 </div>
-<div v-click>
-
-## AI-Assisted Approach
-
-1. **Analyze patterns** in existing tests
-2. **Generate a plan** with AI
-3. **Batch processing** with Claude sub-agent
-4. **Human review** of critical changes
-
-</div>
 </div>
 
 ---
@@ -60,8 +50,6 @@ Fix all tests related to Organization for Patient Base Migration
 
 ## Step-by-Step Process
 
-<v-clicks>
-
 - **Plan**: AI analyzed 200+ test files, identified common patterns and define resolution patterns
 - **Fix in Batch**: Start 10 agents to fix all tests
 - **Run all tests to check**: Detect complex cases
@@ -69,6 +57,7 @@ Fix all tests related to Organization for Patient Base Migration
 - **Trade-off**: Some tests was too complex to be fixed and are removed from the PR
 
 
+<v-clicks>
 
 ## Result 💡
 
@@ -99,7 +88,7 @@ More than half tests refactored with AI assistance letting all teams focusing on
 ## What Didn't Work ❌
 
 - AI struggled with **edge cases** and complex business logic
-- Factories with **non-standard** implementation
+- Factories with **non-standard** implementation like Agenda
 - Some tests needed **100% manual** refactoring
 
 </div>
@@ -130,7 +119,7 @@ Finding Owners for 54 Feature Switches
 
 ## The Problem
 - 54 feature switches affected **by default** to our team
-- Reassigned to our team
+- Reassigned to our team "by mistake"
 - No documentation
 - Unknown business impact
 
@@ -168,25 +157,27 @@ Finding Owners for 54 Feature Switches
 <div class="p-4 bg-green-500/10 rounded">
 
 **58 switches**
-Reaffected
+reaffected
 
 </div>
 
 <div class="p-4 bg-yellow-500/10 rounded">
 
 **4 switches**
-Deleted
+deleted
 
 </div>
 
 <div class="p-4 bg-blue-500/10 rounded">
 
 **0 switches**
-For our team 🎉
+for our team 🎉
 
 </div>
 
 </div>
+
+<div v-click class="grid w-auto h-100px"><iframe src="https://giphy.com/embed/qngUbAbaWRuFy" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 </div>
 
