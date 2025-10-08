@@ -156,21 +156,21 @@ Finding Owners for 54 Feature Switches
 
 <div class="p-4 bg-green-500/10 rounded">
 
-**58 switches**
+**50 FS**
 reaffected
 
 </div>
 
 <div class="p-4 bg-yellow-500/10 rounded">
 
-**4 switches**
+**4 FS**
 deleted
 
 </div>
 
 <div class="p-4 bg-blue-500/10 rounded">
 
-**0 switches**
+**0 FS**
 for our team 🎉
 
 </div>
@@ -202,7 +202,6 @@ for our team 🎉
 
 - More than half suggestions was invalid 🙃
 - **Hallucination** on one team name and suggested deleted Doctoteams
-- Some decisions still needed **business input**
 
 </div>
 </div>
