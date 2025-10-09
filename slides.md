@@ -113,6 +113,23 @@ Finding Owners for 54 Feature Switches
 
 ---
 
+# On a sunny monday morning - Vitals on fire
+
+<div class="relative h-full pt-8">
+  <div class="flex items-start justify-center">
+    <img v-click="3" src="/list3.png" class="w-80 shadow-lg -mr-20" />
+    <img v-click="1" src="/list1.png" class="w-80 shadow-lg -mr-20" />
+    <img v-click="2" src="/list2.png" class="w-80 shadow-lg -mr-20" />
+    <img v-click="4" src="/list4.png" class="w-80 shadow-lg" />
+  </div>
+
+  <div v-click="5" class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <iframe src="https://giphy.com/embed/Cdkk6wFFqisTe" width="480" height="331" frameBorder="0" class="giphy-embed shadow-2xl" allowFullScreen></iframe>
+  </div>
+</div>
+
+---
+
 # The Challenge
 
 <div class="grid grid-cols-2 gap-8">
@@ -139,7 +156,7 @@ Finding Owners for 54 Feature Switches
 
 ---
 
-# What Happened After
+# PR creation
 
 <div class="space-y-4">
 
@@ -181,6 +198,12 @@ for our team 🎉
 <div v-click class="grid w-auto h-100px"><iframe src="https://giphy.com/embed/qngUbAbaWRuFy" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 </div>
+
+---
+
+# Ownership assignment
+
+<img src="/fire.gif" />
 
 ---
 
